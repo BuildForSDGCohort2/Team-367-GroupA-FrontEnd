@@ -12,6 +12,8 @@ const Styles = styled.div`
   .navbar-brand,
   .navbar-nav .nav-link {
     color: #000000;
+    padding: 20px;
+    font-family: "Open Sans Condensed";
 
     &:hover {
       color: Green;
@@ -28,17 +30,12 @@ export const NavigationBar = () => (
         <Nav className="ml-auto">
           <Nav.Item>
             <Nav.Link>
-              <Link to="/">Home</Link>
+              <Link to="/cashflow">Cash Flow</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/about">About</Link>
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/expense">Expense</Link>
             </Nav.Link>
           </Nav.Item>
 
@@ -50,13 +47,18 @@ export const NavigationBar = () => (
 
           <Nav.Item>
             <Nav.Link>
-              <Link to="/expense">Expense</Link>
+              <Link to="/contact">Contact</Link>
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
             <Nav.Link>
-              <Link to="/cashflow">Cash Flow</Link>
+              <Link to="/about">About</Link>
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
+              <Link to="/sign-in-and-sign-up">Sing In</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
